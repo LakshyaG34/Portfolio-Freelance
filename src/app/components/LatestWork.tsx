@@ -13,11 +13,11 @@ const LatestWork = () => {
             MY LATEST WORK
           </h2>
 
-          {/* Make this container relative to allow absolute positioning inside */}
+          
           <div className="relative w-screen overflow-hidden">
             <LatestWorkImg className="w-full h-auto object-cover min-h-[300px]" />
 
-            {/* Card absolutely positioned over the image */}
+            
             <div className="absolute bottom-4 right-4 bg-[#17171799] backdrop-blur-lg p-4 rounded shadow-md max-w-xs text-white text-lg">
               <div className="flex flex-col gap-4">
                 <div className="flex flex-row gap-2">

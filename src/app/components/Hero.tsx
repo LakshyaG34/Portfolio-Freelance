@@ -17,7 +17,7 @@ const Hero = () => {
             WebkitBackgroundClip: "text",
             backgroundClip: "text",
             color: "transparent",
-            display: "inline-block", // Needed for proper gradient application
+            display: "inline-block",
           }}
         >
           A YOUNG CREATIVE DESIGNER BASED IN SAN DIEGO
