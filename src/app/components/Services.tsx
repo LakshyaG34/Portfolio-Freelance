@@ -1,10 +1,11 @@
 import React from "react";
-import Service1 from "./images/Service1.svg";
-import Service2 from "./images/Service2.svg";
-import Service3 from "./images/Service3.svg";
-import Service4 from "./images/Service4.svg";
-import Service5 from "./images/Service5.svg";
-import Service6 from "./images/Service6.svg";
+// import Service1 from "./images/Service1.svg";
+// import Service2 from "./images/Service2.svg";
+// import Service3 from "./images/Service3.svg";
+// import Service4 from "./images/Service4.svg";
+// import Service5 from "./images/Service5.svg";
+// import Service6 from "./images/Service6.svg";
+import Image from "next/image"
 
 const Services = () => {
   return (
@@ -21,7 +22,7 @@ const Services = () => {
         {/* Service 1 */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
           <div className="w-full md:w-1/3 flex justify-start">
-            <Service1 className="w-full max-w-sm" />
+            <Image src = "/images/Service1.svg" alt = "Graphic Desgin" width={300} height={300} className="w-full max-w-sm"/>
           </div>
           <div className="w-full md:w-1/3 text-black md:self-center">
             <h2 className="italic text-[32px] mb-4">Graphic Design</h2>
@@ -38,7 +39,7 @@ const Services = () => {
             </p>
           </div>
           <div className="w-full md:w-1/3 flex justify-end">
-            <Service2 className="w-full max-w-sm" />
+            <Image src = "/images/Service2.svg" alt = "Graphic Desgin" width={300} height={300} className="w-full max-w-sm"/>
           </div>
         </div>
 
@@ -47,7 +48,7 @@ const Services = () => {
         {/* Service 2 */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
           <div className="w-full md:w-1/3 flex justify-start">
-            <Service3 className="w-full max-w-sm" />
+            <Image src = "/images/Service3.svg" alt = "Graphic Desgin" width={300} height={300} className="w-full max-w-sm"/>
           </div>
           <div className="w-full md:w-1/3 text-black md:self-center">
             <h2 className="italic text-[32px] mb-4">Video Editing</h2>
@@ -64,7 +65,7 @@ const Services = () => {
             </p>
           </div>
           <div className="w-full md:w-1/3 flex justify-end">
-            <Service4 className="w-full max-w-sm" />
+            <Image src = "/images/Service4.svg" alt = "Graphic Desgin" width={300} height={300} className="w-full max-w-sm"/>
           </div>
         </div>
 
@@ -73,7 +74,7 @@ const Services = () => {
         {/* Service 3 */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
           <div className="w-full md:w-1/3 flex justify-start">
-            <Service5 className="w-full max-w-sm" />
+            <Image src = "/images/Service5.svg" alt = "Graphic Desgin" width={300} height={300} className="w-full max-w-sm"/>
           </div>
           <div className="w-full md:w-1/3 text-black md:self-center">
             <h2 className="italic text-[32px] mb-4">3D Animation</h2>
@@ -90,7 +91,7 @@ const Services = () => {
             </p>
           </div>
           <div className="w-full md:w-1/3 flex justify-end">
-            <Service6 className="w-full max-w-sm" />
+            <Image src = "/images/Service6.svg" alt = "Graphic Desgin" width={300} height={300} className="w-full max-w-sm"/>
           </div>
         </div>
       </div>

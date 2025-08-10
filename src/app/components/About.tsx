@@ -1,5 +1,6 @@
 import React from "react";
-import AboutImg from "./images/AboutImg.svg";
+// import AboutImg from "./images/AboutImg.svg";
+import Image from "next/image"
 
 const About = () => {
   return (
@@ -8,7 +9,8 @@ const About = () => {
         {/* Image on left - full width on mobile, fixed width on desktop */}
         <div className="w-full md:flex-1 flex justify-start">
           {/* <div className="w-full max-w-[320px] h-[540px] flex-shrink-0"> */}
-            <AboutImg className = "scale-75 sm:scale-75"/>
+            {/* <AboutImg className = "scale-75 sm:scale-75"/> */}
+            <Image src = "/images/AboutImg.svg" alt = "Graphic Desgin" width={432} height={696} className = "scale-75 sm:scale-75"/>
           {/* </div> */}
         </div>
 
