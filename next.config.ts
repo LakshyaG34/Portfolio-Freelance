@@ -3,9 +3,7 @@ import type { NextConfig } from 'next';
 import { Configuration } from 'webpack';
 
 const nextConfig: NextConfig = {
-  // Your existing Next.js config options
-  
-  // For Turbopack
+  // Modern Turbopack config (correct syntax)
   experimental: {
     turbo: {
       rules: {
@@ -16,15 +14,19 @@ const nextConfig: NextConfig = {
       }
     }
   },
-  
-  webpack: (config: Configuration, { isServer }: { isServer: boolean }) => {
+
+  // Webpack fallback config
+  webpack: (config: Configuration) => {
     config.module?.rules?.push({
       test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ['@svgr/webpack'],
+      use: ['@svgr/webpack']
     });
-
     return config;
+  },
+
+  // Disable static image optimization for SVGs
+  images: {
+    disableStaticImages: true
   }
 };
 

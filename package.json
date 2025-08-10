@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@svgr/webpack": "^8.1.0",
     "framer-motion": "^12.23.12",
     "next": "15.4.6",
     "nextjs-toploader": "^3.8.16",
@@ -21,6 +20,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -28,6 +28,7 @@
     "@types/webpack": "^5.28.5",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
+    "svgo": "^4.0.0",
     "tailwindcss": "^4",
     "typescript": "^5",
     "webpack": "^5.101.0"
