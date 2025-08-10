@@ -30,7 +30,7 @@ const Services = () => {
               of each project, from startups seeking recognition to established
               brands seeking a fresh visual perspective.
             </p>
-            <h2 className="text-xl font-semibold mb-4">'What&apos;s included?</h2>
+            <h2 className="text-xl font-semibold mb-4">What&apos;s included?</h2>
             <p>
               Seamlessly transitioning between print and digital mediums, I
               bring ideas to life across diverse platforms, maintaining
