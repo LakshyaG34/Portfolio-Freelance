@@ -30,7 +30,7 @@ const Services = () => {
               of each project, from startups seeking recognition to established
               brands seeking a fresh visual perspective.
             </p>
-            <h2 className="text-xl font-semibold mb-4">What's included?</h2>
+            <h2 className="text-xl font-semibold mb-4">'What&apos;s included?</h2>
             <p>
               Seamlessly transitioning between print and digital mediums, I
               bring ideas to life across diverse platforms, maintaining
@@ -56,7 +56,7 @@ const Services = () => {
               stories to life, balancing pacing, timing, and visual elements to
               captivate audiences.
             </p>
-            <h2 className="text-xl font-semibold mb-4">What's included?</h2>
+            <h2 className="text-xl font-semibold mb-4">What&apos;s included?</h2>
             <p>
               Transforming raw footage into engaging promotional videos, whether
               for local businesses or festival-worthy short films, each project
@@ -82,7 +82,7 @@ const Services = () => {
               bring concepts to life with attention to detail, lighting, and
               advanced rendering techniques.
             </p>
-            <h2 className="text-xl font-semibold mb-4">What's included?</h2>
+            <h2 className="text-xl font-semibold mb-4">What&apos;s included?</h2>
             <p>
               Contributing to virtual reality projects, I seamlessly integrate
               3D elements, enhancing the immersive experience and pushing the

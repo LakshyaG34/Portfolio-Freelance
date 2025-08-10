@@ -46,7 +46,7 @@ const LatestWork = () => {
                   <p>
                     Merging modern aesthetics with brand essence, I crafted
                     logos and visuals that not only resonated with each
-                    startup's unique vision but also left a lasting impression.
+                    startup&apos;s unique vision but also left a lasting impression.
                   </p>
                 </div>
               </div>

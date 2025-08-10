@@ -33,7 +33,7 @@ const Hero = () => {
             href="/"
             className="px-8 py-3 bg-gray-200 text-black rounded-full font-semibold hover:bg-transparent border border-gray-200 hover:text-white transition"
           >
-            LET'S TALK
+            LET&apos;S TALK
           </Link>
         </div>
       </div>

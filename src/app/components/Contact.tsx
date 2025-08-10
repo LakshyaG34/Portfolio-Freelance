@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="flex-1">
           <span className="text-[#F9784C] font-bold text-4xl uppercase tracking-wider">CONTACT</span>
           <p className="text-white mb-8 mt-3 text-xl max-w-lg">
-            Ready to elevate your visual presence? I'm here to bring your creative visions to life. Feel free to reach out.
+            Ready to elevate your visual presence? I&apos;m here to bring your creative visions to life. Feel free to reach out.
           </p>
           
           <hr className="my-8 border border-white"/>
