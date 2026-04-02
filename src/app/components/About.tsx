@@ -9,7 +9,7 @@ const About = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   if (isMobile) {
     return (
-      <section className="py-25 max-w-7xl mx-auto flex flex-col items-center justify-center gap-6">
+      <section className="py-25 max-w-7xl mx-auto flex flex-col gap-8">
         <div className="container mx-auto flex flex-col items-center gap-8">
           <div className="w-full flex flex-col justify-center items-start">
             <p className="text-xl font-bold text-[#F9784C] mb-2 uppercase">
@@ -54,9 +54,9 @@ const About = () => {
 
   return (
     <section className="py-25 max-w-7xl mx-auto">
-      <div className="container mx-auto flex flex-col items-center gap-8">
-        <div className="w-full flex justify-start">
-          <div className="relative w-[343px] h-[560px]">
+      <div className="container mx-auto flex flex-row items-center gap-16">
+        <div className="w-full md:flex-1 flex justify-start">
+          <div className="relative w-108 h-174">
             {/* gradient layer */}
             <div
               className="absolute -left-10 top-5 w-full h-full
@@ -66,7 +66,7 @@ const About = () => {
             />
             {/* background: linear-gradient(151.4deg, #FEFAEE 5.26%, #FCD68B 29.9%, #F9784C 53.25%, #9C356D 72.94%); */}
             {/* image container */}
-            <div className="relative w-[343px] h-[560px] overflow-hidden rounded-[220px]">
+            <div className="relative w-108 h-174 overflow-hidden rounded-[220px]">
               <Image
                 src="https://arthur-01-09-2025.s3.ap-south-1.amazonaws.com/freelance/cc1.png"
                 alt="Graphic Design"
@@ -77,7 +77,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col justify-center items-start">
+        <div className="w-auto flex-1 flex flex-col justify-center items-start">
           <p className="text-xl font-bold text-[#F9784C] mb-2 uppercase">
             ABOUT
           </p>
