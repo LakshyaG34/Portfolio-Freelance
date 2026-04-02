@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import LatestWorkImg from "./images/LatestWorkImg.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import type { Swiper as SwiperType } from "swiper";
 
 import "swiper/css";
 
@@ -26,7 +27,7 @@ const works = [
 ];
 
 const LatestWork = () => {
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<SwiperType | null>(null);
 
   return (
     <section className="w-full">
