@@ -39,8 +39,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${montserrat.variable} antialiased min-h-screen flex flex-col
-          bg-[linear-gradient(342.27deg,#171717_16%,#9C356D_18%,#F9784C_20%,#FCD68B_22%,#FFFAEF_24%,#FCD68B_84%,#F9784C_86%,#9C356D_88%,#171717_90%)]
-          text-white`}
+        bg-[linear-gradient(352.27deg,#171717_10%,#9C356D_12%,#F9784C_14%,#FCD68B_16%,#FFFAEF_18%,#FFFAEF_84%,#FCD68B_86%,#F9784C_87%,#9C356D_88%,#171717_90%)]
+        text-white`}
       >
         <Navbar />
 

@@ -1,56 +1,83 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import LatestWorkImg from "./images/LatestWorkImg.svg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+
+import "swiper/css";
+
+const works = [
+  {
+    tag: "BRANDING",
+    title: "Steaan",
+    desc: "Merging modern aesthetics with brand essence, I crafted logos and visuals that resonated with each startup’s unique vision.",
+  },
+  {
+    tag: "UI DESIGN",
+    title: "NeoBank",
+    desc: "A sleek modern banking UI designed to simplify financial management while maintaining a clean visual identity.",
+  },
+  {
+    tag: "PRODUCT",
+    title: "GlowCos",
+    desc: "A premium cosmetic brand identity with packaging design and marketing visuals.",
+  },
+];
 
 const LatestWork = () => {
+  const swiperRef = useRef(null);
+
   return (
-    <section className="overflow-x-hidden">
-      <div className="container mx-auto px-4 flex justify-center items-center gap-8">
-        <div className="font-montserrat flex flex-col justify-center items-center w-full max-w-[100vw]">
-          <p className="font-montserrat font-bold text-[#F9784CCC] text-2xl mb-4">
-            PORTFOLIO
-          </p>
-          <h2 className="font-montserrat font-bold text-dark text-5xl mb-8">
-            MY LATEST WORK
-          </h2>
+    <section className="w-full">
+      <div className="flex flex-col justify-center items-center w-full">
+        <p className="font-bold text-[#F9784CCC] text-2xl mb-4">PORTFOLIO</p>
 
-          
-          <div className="relative w-screen overflow-hidden">
-            <LatestWorkImg className="w-full h-auto object-cover min-h-[300px]" />
+        <h2 className="font-bold text-dark text-5xl mb-8">MY LATEST WORK</h2>
 
-            
-            <div className="absolute bottom-4 right-4 bg-[#17171799] backdrop-blur-lg p-4 rounded shadow-md max-w-xs text-white text-lg">
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-row gap-2">
-                  <button className="px-4 py-2 text-[#FEFAEE] rounded-full border border-[#FEFAEE] transition">
-                    &lt;-
-                  </button>
+        <div
+          className="relative w-full h-[800px] bg-cover bg-center"
+          style={{ backgroundImage: "url('https://arthur-01-09-2025.s3.ap-south-1.amazonaws.com/freelance/cc2.png')" }}
+        >
+          {/* <LatestWorkImg className="h-auto min-h-[300px]" /> */}
 
-                  <button className="px-4 py-2 bg-[#FEFAEE] text-dark rounded-full border border-black transition">
-                    -&gt;
-                  </button>
-                </div>
+          <div className="absolute bottom-16 right-16 w-[360px]">
+            <Swiper
+              slidesPerView={1}
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
+              className="bg-[#17171799] backdrop-blur-lg p-4 rounded shadow-md text-white"
+            >
+              {works.map((work, index) => (
+                <SwiperSlide key={index}>
+                  <div className="flex flex-col gap-4">
+                    {/* custom arrows */}
+                    <div className="flex gap-2">
+                      <button
+                        onClick={() => swiperRef.current?.slidePrev()}
+                        className="p-3 text-[#FEFAEE] rounded-full border border-[#FEFAEE] hover:bg-white/10 transition"
+                      >
+                        <FiArrowLeft size={18} />
+                      </button>
 
-                <div className="py-12">
-                  <button className="font-montserrat font-bold bg-[#FCD68B] text-[#9C356D] rounded-full px-6 py-2">
-                    BRANDING
-                  </button>
-                </div>
+                      <button
+                        onClick={() => swiperRef.current?.slideNext()}
+                        className="p-3 bg-[#FEFAEE] text-dark rounded-full hover:scale-105 transition"
+                      >
+                        <FiArrowRight size={18} />
+                      </button>
+                    </div>
 
-                <div className="py-2">
-                  <span className="italic font-montserrat text-white">
-                    Steaan
-                  </span>
-                </div>
+                    <button className="font-bold bg-[#FCD68B] text-[#9C356D] rounded-full px-6 py-2">
+                      {work.tag}
+                    </button>
 
-                <div>
-                  <p>
-                    Merging modern aesthetics with brand essence, I crafted
-                    logos and visuals that not only resonated with each
-                    startup&apos;s unique vision but also left a lasting impression.
-                  </p>
-                </div>
-              </div>
-            </div>
+                    <span className="italic text-white">{work.title}</span>
+
+                    <p>{work.desc}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>

@@ -26,7 +26,14 @@ const nextConfig: NextConfig = {
 
   // Disable static image optimization for SVGs
   images: {
-    disableStaticImages: true
+    disableStaticImages: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "arthur-01-09-2025.s3.ap-south-1.amazonaws.com",
+        pathname: "/**"
+      }
+    ]
   }
 };
 
