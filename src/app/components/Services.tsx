@@ -4,7 +4,7 @@ import Image from "next/image";
 const Services = () => {
   return (
     <section className="py-12 w-full mx-auto max-w-[1440px]">
-      <div className="container px-4 flex flex-col">
+      <div className="container px-1 flex flex-col">
         {/* Section Title */}
         <span className="text-[#F9784C] font-bold text-xl uppercase tracking-wider mb-2">
           Services

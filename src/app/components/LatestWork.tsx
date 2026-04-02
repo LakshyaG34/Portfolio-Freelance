@@ -11,7 +11,7 @@ const works = [
   {
     tag: "BRANDING",
     title: "Steaan",
-    desc: "Merging modern aesthetics with brand essence, I crafted logos and visuals that resonated with each startup’s unique vision.",
+    desc: "Merging modern aesthetics with brand essence, I crafted logos and visuals that not only resonated with each startup’s unique vision but also left a lasting impression",
   },
   {
     tag: "UI DESIGN",
@@ -36,20 +36,20 @@ const LatestWork = () => {
         <h2 className="font-bold text-dark text-5xl mb-8">MY LATEST WORK</h2>
 
         <div
-          className="relative w-full h-[800px] bg-cover bg-center"
+          className="relative w-full h-[1000px] bg-cover bg-center bg-fixed"
           style={{ backgroundImage: "url('https://arthur-01-09-2025.s3.ap-south-1.amazonaws.com/freelance/cc2.png')" }}
         >
           {/* <LatestWorkImg className="h-auto min-h-[300px]" /> */}
 
-          <div className="absolute bottom-16 right-16 w-[360px]">
+          <div className="absolute bottom-16 right-16 w-[400px]">
             <Swiper
               slidesPerView={1}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
-              className="bg-[#17171799] backdrop-blur-lg p-4 rounded shadow-md text-white"
+              className="bg-[#17171799] rounded-xl shadow-md text-white"
             >
               {works.map((work, index) => (
                 <SwiperSlide key={index}>
-                  <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-4 px-5 py-10">
                     {/* custom arrows */}
                     <div className="flex gap-2">
                       <button
@@ -67,11 +67,11 @@ const LatestWork = () => {
                       </button>
                     </div>
 
-                    <button className="font-bold bg-[#FCD68B] text-[#9C356D] rounded-full px-6 py-2">
+                    <button className="font-bold bg-[#FCD68B] text-[#9C356D] text-xs rounded-full py-1 w-[80px] mt-7">
                       {work.tag}
                     </button>
 
-                    <span className="italic text-white">{work.title}</span>
+                    <span className="italic text-white text-4xl">{work.title}</span>
 
                     <p>{work.desc}</p>
                   </div>
