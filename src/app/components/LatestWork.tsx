@@ -36,12 +36,23 @@ const LatestWork = () => {
         <h2 className="font-bold text-dark text-5xl mb-8">MY LATEST WORK</h2>
 
         <div
-          className="relative w-full h-[1000px] bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: "url('https://arthur-01-09-2025.s3.ap-south-1.amazonaws.com/freelance/cc2.png')" }}
+          className="relative w-full h-[600px] md:h-[950px] bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage:
+              "url('https://arthur-01-09-2025.s3.ap-south-1.amazonaws.com/freelance/cc2.png')",
+          }}
         >
           {/* <LatestWorkImg className="h-auto min-h-[300px]" /> */}
 
-          <div className="absolute bottom-16 right-16 w-[400px]">
+          <div className="
+          absolute 
+          bottom-6 
+          left-1/2 
+          -translate-x-1/2
+          w-[90%] 
+          max-w-[420px] 
+          md:right-16 md:left-auto md:translate-x-0 md:w-[400px]
+          ">
             <Swiper
               slidesPerView={1}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -71,7 +82,9 @@ const LatestWork = () => {
                       {work.tag}
                     </button>
 
-                    <span className="italic text-white text-4xl">{work.title}</span>
+                    <span className="italic text-white text-4xl">
+                      {work.title}
+                    </span>
 
                     <p>{work.desc}</p>
                   </div>

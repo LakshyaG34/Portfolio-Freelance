@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Offer = () => {
   return (
-    <section className="py-18 px-4 max-w-7xl mx-auto my-auto">
+    <section className="py-18 px-4 max-w-[1440px] mx-auto my-auto">
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Left Column */}
         <div className="flex-1 flex flex-col">

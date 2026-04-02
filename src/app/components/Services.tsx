@@ -1,7 +1,108 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { useMediaQuery } from "react-responsive";
 
 const Services = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  if (isMobile) {
+    return (
+      <section className="py-12 px-6">
+        <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-4">
+            <span className="text-[#F9784C] font-bold text-xl uppercase tracking-wider mb-2">
+              Services
+            </span>
+            <h2 className="text-3xl font-bold mb-8 text-black">WHAT I OFFER</h2>
+          </div>
+
+          <div className="flex flex-col">
+            <h3 className="italic text-2xl mb-4 text-black">Graphic Design</h3>
+
+            <p className="mb-6 text-gray-700">
+              Crafting distinct brand identities that resonate with the essence
+              of each project.
+            </p>
+
+            <div className="relative">
+              <Image
+                src="/images/Service1.svg"
+                alt="Graphic Design"
+                width={320}
+                height={380}
+                className="rounded-lg w-full"
+              />
+
+              <Image
+                src="/images/Service2.svg"
+                alt="Graphic Design"
+                width={180}
+                height={180}
+                className="absolute bottom-[-20px] right-0 rounded-lg"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <h3 className="italic text-2xl mb-4 text-black">Video Editing</h3>
+
+            <p className="mb-6 text-gray-700">
+              Weaving compelling narratives through meticulous editing, I bring
+              stories to life, balancing pacing, timing, and visual elements to
+              captivate audiences.
+            </p>
+
+            <div className="relative">
+              <Image
+                src="/images/Service3.svg"
+                alt="Graphic Design"
+                width={320}
+                height={380}
+                className="rounded-lg w-full"
+              />
+
+              <Image
+                src="/images/Service4.svg"
+                alt="Graphic Design"
+                width={180}
+                height={180}
+                className="absolute bottom-[-20px] right-0 rounded-lg"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <h3 className="italic text-2xl mb-4 text-black">3D Animation</h3>
+
+            <p className="mb-6 text-gray-700">
+              Creating realistic 3D models for architectural visualization, I
+              bring concepts to life with attention to detail, lighting, and
+              advanced rendering techniques.
+            </p>
+
+            <div className="relative">
+              <Image
+                src="/images/Service5.svg"
+                alt="Graphic Design"
+                width={320}
+                height={380}
+                className="rounded-lg w-full"
+              />
+
+              <Image
+                src="/images/Service6.svg"
+                alt="Graphic Design"
+                width={180}
+                height={180}
+                className="absolute bottom-[-20px] right-0 rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-12 w-full mx-auto max-w-[1440px]">
       <div className="container px-1 flex flex-col">
