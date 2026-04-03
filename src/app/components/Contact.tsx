@@ -66,7 +66,7 @@ const Contact = () => {
                     type="radio"
                     name="service"
                     value="graphic-design"
-                    className="w-5 h-5 text-[#F9784C] border border-white bg-white checked:bg-[#F9784C] focus:ring-[#F9784C]"
+                    className="w-5 h-5 accent-[#F9784C] border border-white bg-white checked:bg-[#F9784C] focus:ring-[#F9784C]"
                   />
                   <span className="text-gray-400">Graphic Design</span>
                 </label>
@@ -75,7 +75,7 @@ const Contact = () => {
                     type="radio"
                     name="service"
                     value="3d-modelling"
-                    className="w-5 h-5 text-[#F9784C] border border-white bg-white checked:bg-[#F9784C] focus:ring-[#F9784C]"
+                    className="w-5 h-5 accent-[#F9784C] border border-white bg-white checked:bg-[#F9784C] focus:ring-[#F9784C]"
                   />
                   <span className="text-gray-400">3D Modelling & Animation</span>
                 </label>
@@ -84,7 +84,7 @@ const Contact = () => {
                     type="radio"
                     name="service"
                     value="video-editing"
-                    className="w-5 h-5 text-[#F9784C] border border-white bg-white checked:bg-[#F9784C] focus:ring-[#F9784C]"
+                    className="w-5 h-5 accent-[#F9784C] border border-white bg-white checked:bg-[#F9784C] focus:ring-[#F9784C]"
                   />
                   <span className="text-gray-400">Video Editing</span>
                 </label>
@@ -94,7 +94,7 @@ const Contact = () => {
                     name="service"
                     value="video-production"
                     defaultChecked
-                    className="w-5 h-5 text-[#F9784C] border border-white bg-white checked:bg-[#F9784C] focus:ring-[#F9784C]"
+                    className="w-5 h-5 accent-[#F9784C] border border-white bg-white checked:bg-[#F9784C] focus:ring-[#F9784C]"
                   />
                   <span className="text-gray-400">Video Production</span>
                 </label>

@@ -50,7 +50,7 @@ const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-sm border border-transparent hover:shadow-md transition-shadow"
+            className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
             style={{
               background: "linear-gradient(96.36deg, #FCD68B 0%, #FFFFFF 100%)",
             }}

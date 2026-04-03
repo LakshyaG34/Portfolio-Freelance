@@ -2,6 +2,8 @@
 
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css/pagination";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import type { Swiper as SwiperType } from "swiper";
 
@@ -44,7 +46,8 @@ const LatestWork = () => {
         >
           {/* <LatestWorkImg className="h-auto min-h-[300px]" /> */}
 
-          <div className="
+          <div
+            className="
           absolute 
           bottom-6 
           left-1/2 
@@ -52,9 +55,14 @@ const LatestWork = () => {
           w-[90%] 
           max-w-[420px] 
           md:right-16 md:left-auto md:translate-x-0 md:w-[400px]
-          ">
+          "
+          >
             <Swiper
               slidesPerView={1}
+              modules={[Pagination]}
+              pagination={{
+                clickable: true,
+              }}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               className="bg-[#17171799] rounded-xl shadow-md text-white"
             >
@@ -65,7 +73,7 @@ const LatestWork = () => {
                     <div className="flex gap-2">
                       <button
                         onClick={() => swiperRef.current?.slidePrev()}
-                        className="p-3 text-[#FEFAEE] rounded-full border border-[#FEFAEE] hover:bg-white/10 transition"
+                        className="p-3 text-dark rounded-full border border-dark hover:border-[#FEFAEE] hover:bg-[#FEFAEE] transition"
                       >
                         <FiArrowLeft size={18} />
                       </button>

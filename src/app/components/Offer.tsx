@@ -85,8 +85,7 @@ const Offer = () => {
               </p>
             </div>
           </div>
-
-         
+          
           <div className="flex gap-4">
             <div className="flex flex-row items-center -mt-10">
               <Image
