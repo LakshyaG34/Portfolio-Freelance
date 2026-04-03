@@ -1,6 +1,4 @@
 import React from "react";
-// import Star from "./images/Star.svg";
-// import Line from "./images/Line.svg";
 import Image from "next/image";
 
 const Offer = () => {
@@ -24,7 +22,7 @@ const Offer = () => {
         <div className="flex-1 space-y-8">
           
           <div className="flex gap-4">
-            <div className="flex flex-row items-center -mt-20">
+            <div className="flex flex-row items-center -mt-10">
               <Image
                 src="/images/Star.svg"
                 alt="L1"
@@ -45,7 +43,7 @@ const Offer = () => {
               />
             </div>
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
+              <h3 className="text-xl font-bold text-gray-900">
                 Visual Alchemist
               </h3>
               <p className="text-gray-700">
@@ -57,7 +55,7 @@ const Offer = () => {
 
          
           <div className="flex gap-4">
-            <div className="flex flex-row items-center -mt-20">
+            <div className="flex flex-row items-center -mt-10">
               <Image
                 src="/images/Star.svg"
                 alt="L1"
@@ -90,7 +88,7 @@ const Offer = () => {
 
          
           <div className="flex gap-4">
-            <div className="flex flex-row items-center -mt-20">
+            <div className="flex flex-row items-center -mt-10">
               <Image
                 src="/images/Star.svg"
                 alt="L1"
